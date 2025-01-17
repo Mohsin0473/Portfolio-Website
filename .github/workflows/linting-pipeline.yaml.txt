@@ -25,14 +25,11 @@ jobs:
           node-version: '18' 
       
       - name: Install dependencies
-        run: |
-          npm install --save-dev htmlhint stylelint
+        run: npm install --save-dev htmlhint stylelint
       
       - name: Lint HTML files with HTMLHint
-        run: |
-          npx htmlhint "**/*.html"
+        run: npx htmlhint "**/*.html"
       
       - name: Lint CSS files with Stylelint
-        run: |
-          npx stylelint "**/*.css"
+        run: npx stylelint "**/*.css"
       
