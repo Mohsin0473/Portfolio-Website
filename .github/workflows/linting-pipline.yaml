@@ -23,7 +23,7 @@ jobs:
         uses: actions/setup-node@v4
 
       - name: Install dependencies
-        run: npm install --save-dev htmlhint stylelint
+        run: npm install --save-dev htmlhint stylelint stylelint-config-standard
 
       - name: Lint HTML files with HTMLHint
         run: npx htmlhint "**/*.html"
